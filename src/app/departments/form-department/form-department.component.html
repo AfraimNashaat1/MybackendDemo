@@ -1,0 +1,59 @@
+
+<h1 mat-dialog-title>{{titleLabel}}</h1>
+<div mat-dialog-content>
+    <form [formGroup] ="form">
+    <div  style="direction: rtl;">
+        <mat-form-field   style="text-align: right;" >
+        
+        <mat-label   > أسم القسم</mat-label>
+        
+        
+        <input formControlName="departmentName" matInput   />
+        <mat-error *ngIf="form.invalid"> {{getErrorMessageFieldName()}}</mat-error>
+        <br/>
+    
+        </mat-form-field>
+    </div>
+</form>
+</div>
+<div mat-dialog-actions [align]="'end'">
+<button mat-raised-button   class="btn btn-danger"  color="warn" mat-dialog-close ><i class="fa fa-fw  fa-close "></i>الغاء</button>
+<button mat-raised-button  class="btn btn-primary"  style="margin: 1rem;" [disabled]="form.invalid" color="primary"  (click)="addEditDepartment()" mat-dialog-close> <i class="fa fa-fw  fa-save "></i> {{actionBtn}}</button>
+
+</div>
+
+<div *ngIf="alert" class="alert alert-success alert-dismissible fade show" role="alert">
+    <strong>تمت العملية بنجاح</strong> تم اضافة وظيفة جديدة
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+  </div>
+<!-- <p>
+    <ngb-alert>
+      This alert's type is success and it's not dismissible because the config has been customized
+    </ngb-alert>
+  </p> -->
+
+
+
+<!-- <form (submit)="savechanges()" [formGroup] ="form" >
+    <div  style="direction: rtl;">
+    <mat-form-field   style="text-align: right;
+         " >
+    
+    <mat-label   > أسم القسم</mat-label>
+    
+    
+    <input formControlName="departmentName" matInput   />
+    <mat-error *ngIf="form.invalid"> {{getErrorMessageFieldName()}}</mat-error>
+    <br/>
+
+    </mat-form-field>
+</div>
+    <div  style="direction: rtl;">
+        <button mat-flat-button class="btn btn-primary" color="primary" [disabled]="form.invalid" style="text-align: right; margin-left: 1rem;">
+            <i class="fa fa-fw  fa-save "></i>   حفــظ
+            </button>
+            <a  class="btn btn-danger" mat-stroked-button routerLink="/departments" >   <i class="fa fa-fw  fa-close "></i>إلغـــاء</a>
+    </div>
+    
+    
+    </form> -->

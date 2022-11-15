@@ -1,0 +1,100 @@
+<br />
+<br />
+<br />
+<h1 mat-dialog-title>{{titleLabel}}</h1>
+<div mat-dialog-content>
+    <form [formGroup]="form">
+        <div style="direction: rtl;">
+            <mat-form-field appearance="outline" style="text-align: right;">
+
+                <mat-label> أسم الموظف</mat-label>
+
+
+                <input formControlName="FullName" matInput />
+                <mat-error *ngIf="form.invalid"> {{getErrorMessageFieldName()}}</mat-error>
+
+
+            </mat-form-field>
+            <br/>
+            <mat-form-field appearance="outline" style="text-align: right;">
+
+                <mat-label>رقم الموبايل</mat-label>
+
+
+                <input formControlName="MobileNumber" matInput />
+                <mat-error *ngIf="form.invalid"> {{getErrorMessageMobileNumber()}}</mat-error>
+                <br />
+
+            </mat-form-field>
+            <br/>
+            <mat-form-field appearance="outline" style="text-align: right;">
+
+                <mat-label>العنوان </mat-label>
+
+
+                <input formControlName="Address" matInput />
+                <mat-error *ngIf="form.invalid"> {{getErrorMessageAddress()}}</mat-error>
+
+            </mat-form-field>
+            <br />
+            <mat-form-field appearance="outline" style="text-align: right;">
+
+                <mat-label>البريد الألكتروني</mat-label>
+
+
+                <input formControlName="Email" matInput />
+                <mat-error *ngIf="form.invalid"> {{getErrorMessageEmail()}}</mat-error>
+                <br />
+
+            </mat-form-field>
+            <br />
+            <mat-form-field appearance="outline" style="text-align: right;">
+
+                <mat-label> العمر </mat-label>
+
+
+                <input formControlName="Age" matInput />
+                <br />
+
+            </mat-form-field>
+            <br />
+            <mat-form-field appearance="outline">
+                <mat-label>تاريخ الميلاد</mat-label>
+                <input formControlName="DateOfBirth" matInput [matDatepicker]="picker" />
+                <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                <mat-datepicker #picker></mat-datepicker>
+
+            </mat-form-field>
+
+            <h4>اختر صورة الموظف</h4>
+
+            <app-input-img [urlCurrentImage]="Photo" (onSelectedImage)="onSelectedImage($event)"></app-input-img>
+            <br />
+            <mat-form-field appearance="outline">
+                <mat-label>أختر القسم</mat-label>
+                <mat-select mat-select formControlName="DepartmentId">
+                    <mat-option *ngFor="let item of deptsList" [value]="item.id">{{item.departmentName}}</mat-option>
+                </mat-select>
+            </mat-form-field>
+            <br/>
+            <div>
+               
+            </div>
+            <mat-form-field appearance="outline">
+                <mat-label>أختر الوظيفة</mat-label>
+                <mat-select mat-select formControlName="JobId">
+                    <mat-option *ngFor="let item of jobsList" [value]="item.id">{{item.jobTitle}}</mat-option>
+
+                </mat-select>
+            </mat-form-field>
+
+        </div>
+    </form>
+</div>
+<div mat-dialog-actions [align]="'end'">
+    <button mat-raised-button class="btn btn-danger" color="warn" mat-dialog-close><i
+            class="fa fa-fw  fa-close "></i>الغاء</button>
+    <button mat-raised-button class="btn btn-primary" style="margin: 1rem;" [disabled]="form.invalid" color="primary"
+        (click)="addEditEmployee()" mat-dialog-close> <i class="fa fa-fw  fa-save "></i> {{actionBtn}}</button>
+
+</div>

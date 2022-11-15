@@ -1,0 +1,140 @@
+/* .example-button-row button,
+.example-button-row a {
+  margin-right: 8px;
+}
+
+section {
+    display: table;
+  }
+  
+  .example-label {
+    display: table-cell;
+    font-size: 14px;
+    margin-left: 8px;
+    min-width: 120px;
+  }
+  
+  .example-button-row {
+    display: table-cell;
+    width: 490px;
+  }
+  
+  .example-button-row .mat-button-base {
+    margin: 8px 8px 8px 0;
+  }
+  
+  .example-flex-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .example-button-container {
+    display: flex;
+    justify-content: center;
+    width: 120px;
+  } */
+img{ 
+  width: 100px;
+  height: 100px;
+}
+:host ::ng-deep .mat-sort-header-container {
+  display: flex;
+  justify-content: center;
+}
+  table {
+    width: 100%;
+    align-content: center;
+    text-align: center;
+  }
+  .mat-paginator-page-size ng-star-inserted{
+    direction: ltr !important;
+  }
+
+  
+  .mat-form-field {
+    font-size: 14px;
+    
+    width: 100%;
+  }
+  .mat-cell{
+    margin-right: 1rem;
+
+    padding: 1rem;
+   text-align:center;
+  }
+
+
+  .container{
+    max-width:2000px;
+    margin-top: 1 rem;
+    min-height: 100%;
+
+  }
+  section {
+    display: table;
+  }
+  
+  .example-label {
+    display: table-cell;
+    font-size: 14px;
+    margin-left: 8px;
+    min-width: 120px;
+  }
+  
+  /* .example-button-row {
+    display: table-cell;
+    width: 490px;
+  }
+  
+  .example-button-row .mat-button-base {
+    margin: 8px 8px 8px 0;
+  }
+  
+  .example-flex-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .example-button-container {
+    display: flex;
+    justify-content: center;
+    width: 120px;
+  }
+  .example-button-row button,
+.example-button-row a {
+  margin-right: 8px;
+} */
+.mat-form-field-infix {
+  display: block;
+  position: relative;
+ flex: 0%;
+  min-width: 0;
+  width: 180px;
+}
+.btnE{
+ 
+  display: contents;
+  margin: 200px;
+  color: blue;
+}
+.btnD{
+  
+  display: contents;
+  margin-right: 50px;
+  color:red;
+}
+.mat-icon{
+  margin: 7px;
+}
+
+
+
+
+
+
+ .mat-paginator-icon {
+    transform: rotate(180deg);
+  
+}
