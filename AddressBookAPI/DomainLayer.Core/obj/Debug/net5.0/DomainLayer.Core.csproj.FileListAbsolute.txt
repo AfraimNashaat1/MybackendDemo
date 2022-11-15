@@ -1,0 +1,12 @@
+E:\Tamweely Task\AddressBookAPIOnion\AddressBookAPI\DomainLayer.Core\bin\Debug\net5.0\DomainLayer.Core.deps.json
+E:\Tamweely Task\AddressBookAPIOnion\AddressBookAPI\DomainLayer.Core\bin\Debug\net5.0\DomainLayer.Core.dll
+E:\Tamweely Task\AddressBookAPIOnion\AddressBookAPI\DomainLayer.Core\bin\Debug\net5.0\ref\DomainLayer.Core.dll
+E:\Tamweely Task\AddressBookAPIOnion\AddressBookAPI\DomainLayer.Core\bin\Debug\net5.0\DomainLayer.Core.pdb
+E:\Tamweely Task\AddressBookAPIOnion\AddressBookAPI\DomainLayer.Core\obj\Debug\net5.0\DomainLayer.Core.csproj.AssemblyReference.cache
+E:\Tamweely Task\AddressBookAPIOnion\AddressBookAPI\DomainLayer.Core\obj\Debug\net5.0\DomainLayer.Core.GeneratedMSBuildEditorConfig.editorconfig
+E:\Tamweely Task\AddressBookAPIOnion\AddressBookAPI\DomainLayer.Core\obj\Debug\net5.0\DomainLayer.Core.AssemblyInfoInputs.cache
+E:\Tamweely Task\AddressBookAPIOnion\AddressBookAPI\DomainLayer.Core\obj\Debug\net5.0\DomainLayer.Core.AssemblyInfo.cs
+E:\Tamweely Task\AddressBookAPIOnion\AddressBookAPI\DomainLayer.Core\obj\Debug\net5.0\DomainLayer.Core.csproj.CoreCompileInputs.cache
+E:\Tamweely Task\AddressBookAPIOnion\AddressBookAPI\DomainLayer.Core\obj\Debug\net5.0\DomainLayer.Core.dll
+E:\Tamweely Task\AddressBookAPIOnion\AddressBookAPI\DomainLayer.Core\obj\Debug\net5.0\ref\DomainLayer.Core.dll
+E:\Tamweely Task\AddressBookAPIOnion\AddressBookAPI\DomainLayer.Core\obj\Debug\net5.0\DomainLayer.Core.pdb
